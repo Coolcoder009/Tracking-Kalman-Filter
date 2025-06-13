@@ -1,3 +1,7 @@
 Object detection with HSV masking. Found upper and lower HSV 
 Contours and filtering contours based on shape and size, circularity in cv (Blob detection)
 kalman filter for tracking 
+
+
+Since hsv couldn't be found exactly for the ball, other white regions where also where there so use Blob detection and then compared the area between range 200 & 2000.
+Kalman filters where applied on detected ball if ball not detected based on the prev location next possible locations where predicted and tracked! 
